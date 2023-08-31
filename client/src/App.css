@@ -1,0 +1,81 @@
+@media (min-width: 600px) {
+  .App {
+    position: absolute;
+    left: calc(100vw - 66%)
+  }
+}
+
+@media (max-width: 699px) {
+  .App {
+    position: absolute;
+    left: calc(100vw - 86%)
+  }
+}
+
+.contact-container {
+  border: 2px solid lightgray;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.contact-container p {
+  margin: 2px;
+}
+
+.address-key {
+  font-size: 14px;
+}
+
+.contact-list-container {
+  width: 300px;
+}
+
+.search-input {
+  min-width: 250px;
+}
+
+.form-input {
+  max-width: 220px;
+  flex: 1;
+}
+
+.email {
+  color: lightslategrey;
+}
+
+.error {
+  color: red;
+}
+
+.editing {
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 3px;
+  margin-top: 10px;
+}
+
+.action-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.button-container > button {
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer > * {
+  flex: 1;
+}
