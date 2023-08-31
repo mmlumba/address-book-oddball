@@ -27,14 +27,26 @@
 
 .address-key {
   font-size: 14px;
+  color: lightslategrey;
 }
 
 .contact-list-container {
-  width: 300px;
+  width: 400px;
 }
 
 .search-input {
-  min-width: 250px;
+  min-width: 333px;
+}
+
+.search-container {
+  padding: 10px 0px;
+}
+
+.avatar-letter {
+  z-index: 1;
+  position: absolute;
+  left: 37px;
+  font-size: 24px;
 }
 
 .form-input {

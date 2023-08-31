@@ -52,12 +52,11 @@ const App = () => {
   
     return (
       <div className="App">
-          <div>
+          <div className='search-container'>
             <input
               className="search-input"
               type="text"
               name="search"
-              style={{minWidth: 230}}
               onChange={(e) => setSearch(e.target.value)}
             />
             <button onClick={searchList}>Search</button>

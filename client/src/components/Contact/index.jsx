@@ -1,6 +1,9 @@
 import React from "react"
+import Avatar from "../Avatar"
+
 const Contact = (props) => {
-    const { firstName, 
+    const { 
+      firstName, 
       isCurrentContact, 
       lastName, 
       email, 
@@ -120,12 +123,18 @@ const Contact = (props) => {
   
     return <div className="contact-container" onClick={!editing ? viewContactInfo : undefined}>
       {isCurrentContact && error.status && <p className="error">Unable to update contact on backend! Error: {error.message}</p>}
+      <div style={{display: 'flex', alignItems: 'center'}}>
+      <Avatar firstName={firstName}/>
+      <span>
       <p>{firstName} {lastName}</p>
       <p className="email">{email}</p>
+      </span>
+      </div>
+      
       {isCurrentContact && <div className="expanded">
         <p className='address-key'>{street}</p>
         <p className='address-key'>{city}, {state} {zip}</p>
-        <p>{phone}</p>
+        <p className='address-key'>{phone}</p>
         {!editing && <div className="action-buttons"><button onClick={() => {
           isEditing(true)
           setEditedContact(currentContact)
